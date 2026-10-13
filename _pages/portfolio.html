@@ -7,8 +7,17 @@ author_profile: true
 
 {% include base_path %}
 
-
 {% for post in site.portfolio %}
-  {% include archive-single.html %}
+  {% unless post.category == "hackathons" %}
+    {% include archive-single.html %}
+  {% endunless %}
 {% endfor %}
 
+<h1 class="page__title" style="margin-top: 2em;">Hackathons and GameJams</h1>
+<hr />
+
+{% for post in site.portfolio %}
+  {% if post.category == "hackathons" %}
+    {% include archive-single.html %}
+  {% endif %}
+{% endfor %}

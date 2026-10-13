@@ -31,6 +31,9 @@ My name is Sam and I am a Computer Science student with the University of Louisv
   <div class="slider__slide">
     <img src="/images/IMG_6134.jpg" alt="Photo 7" />
   </div>
+  <div class="slider__slide">
+    <img src="/images/capstonephoto.jpg" alt="Capstone Team Photo" />
+  </div>
 </div>
 
 <style>
@@ -81,6 +84,10 @@ html:not([data-theme="dark"]) .slider {
 
 .slider__slide img[src="/images/IMG_6134.jpg"] {
   object-position: center calc(50% + 200px);
+}
+
+.slider__slide img[src="/images/capstonephoto.jpg"] {
+  object-position: center 20%;
 }
 
 .slider__slide.is-active {

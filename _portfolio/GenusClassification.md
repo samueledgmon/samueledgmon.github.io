@@ -34,8 +34,13 @@ The project consisted of three main steps in the pipeline:
 
 This project had nearly 1300 tree records, with the most recent dataset being 2million pixel records~ by 343 features. This amount of data required the usage of specific packages to speed up calculations and designed batching to maintain enough memory for the full pipeline.
 
+<figure>
+  <img src="{{ '/images/GenusClassification/Helper Functions.PNG' | relative_url }}" alt="Helper Functions">
+  <figcaption>Helper functions created to automate model training runs, VIF and importance filtering, and logging across different hyperparameter configurations.</figcaption>
+</figure>
 
 
-
-
-
+<figure>
+  <img src="{{ '/images/GenusClassification/Log.PNG' | relative_url }}" alt="Training Log">
+  <figcaption>Example output from the automated training log, recording accuracy metrics, training time, hyperparameters, and selected features for each run.</figcaption>
+</figure>
